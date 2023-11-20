@@ -4,7 +4,7 @@ function quicksort(array) {
     }
 
     const stack=[];      //Initalize stack
-    stack.push(0, arr.length-1);    //Push the 1st index and the last index of the array onto the stack in order to sort the entire array
+    stack.push(0, array.length-1);    //Push the 1st index and the last index of the array onto the stack in order to sort the entire array
 
     while(stack.length>0){      //While the length of the stack is greater than 0
         const right=stack.pop();  //Pop the last element of the subarray and let it equal right "boundry"
@@ -42,7 +42,7 @@ function split(array, left, right){     //Function to choose a pivot
 }
 
 function swap(array, i, j){     //Function to switch the positions of two elements
-    const temp = arr[i];      //Temporarily store the value of the element at index i
+    const temp = array[i];      //Temporarily store the value of the element at index i
     array[i]=array[j];      //Swap the value at index i with the value at index j  
     array[j]=temp;      //Store the value at index j as temp
 }
